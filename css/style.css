@@ -79,7 +79,7 @@ ul li:nth-child(6) a:hover{
 
 header #hero{
     width: 100%;
-    background: url("../imagenes/bg-section.png");
+    background: url("../imagenes/Frame\ 2\ \(6\).png");
     background-size: cover;
     padding: 230px 180px;
 }
@@ -125,41 +125,66 @@ main{
     width: 100%;
 }
 
-main #section{
-    background: #fff;
+main #section1{
+    background: #ffffff;
     position: relative;
     width: 100%;
     padding-bottom: 80px;
 }
 
-#section1 .fila article {
+#section1 .fila article{
     padding: 40px 50px;
     text-align: left;
-    box-shadow: 0px 4px 8px 5px #999;
+    box-shadow: 0px 4px 8px -5px #999999 ;
 }
-
-/* Estilo de imagen en el título */
-#section1 .fila article h2 img {
+#section1 .fila article h2 img{
     width: 60px;
+    margin-right: 20px;
+}
+#section1 .fila article:nth-child(1){
+    background: #ffff;
 }
 
-/* Primer artículo: Estilo de fondo, título y botón */
-#section1 .fila article:nth-child(1) {
+#section1 .fila article:nth-child(1) h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#section1 .fila article:nth-child(1) p{
+    padding-left: 80px;
+    margin-bottom: 15px;
+}
+
+#section1 .fila article:nth-child(1) button{
+    background: transparent;
+    border: 0;
+    color: var(--primary-color);
+    padding: 8px 20px;
+    font-weight: 600;
+    border-left: 4px solid var(--primary-color);
+    border-right: 4px solid var(--primary-color);
+    margin-left: 80px;
+}
+
+
+
+#section1 .fila article:nth-child(2){
     background: var(--secontary-color);
 }
 
-#section1 .fila article:nth-child(1) h2 {
+#section1 .fila article:nth-child(2) h2{
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    margin-bottom: 15px;
+    color: #ffffff;
 }
-
-#section1 .fila article:nth-child(1) p {
+#section1 .fila article:nth-child(2) p{
     padding-left: 100px;
     margin-bottom: 15px;
+    color: #ffffff;
 }
 
-#section1 .fila article:nth-child(1) button {
+#section1 .fila article:nth-child(2) button{
     background: transparent;
     border: 0;
     color: var(--primary-color);
@@ -167,80 +192,62 @@ main #section{
     font-weight: 600;
     border-left: 4px solid var(--primary-color);
     border-right: 4px solid var(--primary-color);
-    margin-left: 100px;
-    cursor: pointer;
+    margin-left: 80px;
 }
 
-/* Segundo artículo: Fondo secundario, título y texto en blanco */
-#section1 .fila article:nth-child(2) {
-    background: transparent;
+#section1 .welcome{
+    padding-top: 200px;
 }
 
-#section1 .fila article:nth-child(2) h2 {
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    color: #fff;
+#section1 .welcome article{
+    box-shadow: 0 0 0 0 transparent;
 }
 
-#section1 .fila article:nth-child(2) p {
-    padding-left: 100px;
-    margin-bottom: 15px;
-   
+#section1 .welcome .info{
+    width: 45%;
+    padding-right: 30px;
+
 }
 
-#section1 .fila article:nth-child(2) button {
-    background: transparent;
-    border: 0;
-    color: var(--primary-color);
-    padding: 8px 20px;
-    font-weight: 600;
-    border-left: 4px solid var(--primary-color);
-    border-right: 4px solid var(--primary-color);
-    margin-left: 100px;
-    cursor: pointer;
-}
 
-/* Sección de bienvenida */
-
-
-.welcome .info h3 {
+.welcome .info h3{
     font-size: 40px;
-    color: var(--primary-color);
-    margin-left: 90px;
 }
 
-#section1 .welcome .info p {
-    padding-left: 0 ;
+.welcome .info h3 b{
+    color: var(--primary-color);
+}
+
+#section1 .welcome .info p{
+    padding-left: 0 !important;
     margin-top: 14px;
     font-weight: 400;
-    
 }
-
-#section1 .welcome article.info button {
+#section1 .welcome article.info button{
     background: #f5f5f5;
     color: var(--secondary-color);
     padding: 20px 40px;
-    margin-left: 90px;
+    margin-left: 0;
     border: 0;
-    cursor: pointer;
 }
 
-/* Posicionamiento de imágenes en la sección de bienvenida */
-#section1 .welcome article.fotos {
+#section1 .welcome article.fotos{
     position: relative;
-
+    background: transparent;
 }
-
-#section1 .welcome article.fotos div {
+.welcome article.fotos div{
     position: absolute;
-    z-index: 1;
+    z-index: 999;
     bottom: -50px;
     left: -40px;
 }
 
-
-
+.destacados{
+    position: absolute;
+    top: -60px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
 
 
 #section2{
@@ -343,3 +350,143 @@ main #section{
     position: relative;
 }
 
+
+#section3{
+    width: 100%;
+    position: relative;
+    background: url(../imagenes/Frame\ 2\ \(2\).png);
+    background-size: cover ;
+}
+
+#section3 .fila .card-vertical{
+    width: 25%;
+    padding: 800px 40px 40px;
+    border-right: 1px solid #ffff;
+    background: transparent;
+    transition: .4s;
+    position: relative;
+}
+
+#section3 .fila .card-vertical:hover{
+    background: #ffffff40;
+    backdrop-filter: blur(6px);
+}
+
+
+
+#section3 .fila .card-vertical h3{
+    color: var(--secontary-color);
+    font-size: 28px;
+}
+#section3 .fila .card-vertical h2{
+    color: var(--primary-color);
+    font-size: 34px;
+    margin-bottom: 14px;
+}
+
+#section3 .fila .card-vertical p{
+    color:transparent;
+    margin-bottom: 14px;
+    font-size: 19px;
+    transition: .5s;
+}
+
+#section3 .fila .card-vertical button{
+    background: #ffffff40;
+    color: #ffffff;
+    border: 0 transparent;
+    padding: 14px 20px;
+    font-size: 18px;
+}
+
+
+#section3 .fila .card-vertical .info-card{
+    position: absolute;
+    bottom: 30px;
+    transition: .4s;
+
+}
+
+#section3 .card-vertical:hover .info-card{
+    bottom: 130px;
+
+}
+
+#section3 .card-vertical:hover p{
+    color: #ffff;
+}
+
+#section4{
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    background: var(--secontary-color);
+}
+#section4 h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+#section4 h2 b{
+    color: var(--primary-color);
+}
+
+#section4 p{
+    font-size: 18px;
+}
+
+#section5{
+    width: 100% ;
+    padding: 120px 0;
+    text-align: center;
+}
+
+#section5 h2{
+    font-size: 34px;
+}
+
+#section5 h2 b{
+    color: var(--primary-color);
+}
+#section5 .card-metas{
+    width: 25%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#section5 .card-metas i{
+    font-size: 60px;
+    color: var(--primary-color);
+    margin-bottom: 14px;
+    transition: .4s;
+} 
+
+#section5 .card-metas:hover i{
+    color: var(--secontary-color);
+}
+
+#section5 .card-metas h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+#section5 .card-metas h4{
+    font-size: 28px;
+    margin-bottom: 14px;
+    
+}
+
+footer{
+    padding: 40px 0;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+#footer .container{
+    border-top: 1px solid #999999;
+
+}
